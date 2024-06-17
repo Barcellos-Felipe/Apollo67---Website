@@ -1,5 +1,5 @@
 <script setup>
-  import Sidebar from 'primevue/sidebar';
+import logoUrl from '../assets/logo-apollo.png';
 import { ref } from 'vue';
 
   // https://medium.com/@laraib07/how-to-dynamically-add-or-remove-css-classes-on-scroll-9369e9d97c39
@@ -29,7 +29,7 @@ import { ref } from 'vue';
 <template>
   <div id="navbar" class="bg-none py-[1.7rem] border-b-[1px] border-b-apollo will-change-scroll transition-all delay-150 duration-500">
     <div class="flex items-center justify-between max-sm:mx-[7%] sm:mx-[10%] lg:mx-[15%] min-h-[42px]">
-      <a href="#"><Image :src="'src/assets/logo-apollo.png'" alt="Logo" width="90"/></a>
+      <a href="#"><Image :src=logoUrl alt="Logo" width="90"/></a>
       <Sidebar class="lg:hidden bg-[#1e1e1e] border-none text-white font-montserratg" v-model:visible="visibleRight" header="Right Sidebar" position="right">
         <ul class="space-y-3">
           <li class="mt-5">Início</li>
