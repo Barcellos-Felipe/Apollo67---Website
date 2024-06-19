@@ -32,12 +32,12 @@ import { ref } from 'vue';
       <a class="min-w-[90px]" href="#"><Image :src=logoUrl alt="Logo" width="90"/></a>
       <Sidebar class="font-montserratg border-none bg-[#1e1e1e] text-white lg:hidden" v-model:visible="visibleRight" header="Right Sidebar" position="right">
         <ul class="space-y-3">
-          <li class="mt-5">Início</li>
-          <li>Serviços</li>
-          <li>Portfolio</li>
-          <li>Clientes</li>
-          <li>Blog</li>
-          <li>Contato</li>
+          <li class="mt-5"><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contato</a></li>
         </ul>
       </Sidebar>
       <Button class="lg:hidden" icon="pi pi-bars text-2xl text-white" @click="visibleRight = true" text />
