@@ -14,6 +14,7 @@ import NavBar from './components/NavBar.vue';
 import Image from 'primevue/image';
 import Button from 'primevue/button';
 import Sidebar from 'primevue/sidebar';
+import Card from 'primevue/card';
 
 const app = createApp(App);
 
@@ -22,6 +23,7 @@ app.use(PrimeVue);
 app.component('Image', Image);
 app.component('Button', Button);
 app.component('Sidebar', Sidebar);
+app.component('Card', Card);
 
 app.component('NavBar', NavBar);
 
